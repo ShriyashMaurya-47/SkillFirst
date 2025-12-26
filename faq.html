@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ - TalentFirst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently Asked Questions about TalentFirst's skill-based hiring platform.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faqstyle.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="logo">
+        <a href="index.html">Talent<span>First</span></a>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="why-talentfirst.html">Why TalentFirst</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="for-companies.html">For Companies</a>
+        <a href="contact.html" class="btn btn-small btn-outline">Contact</a>
+    </nav>
+    <div class="theme-switch">
+        <button onclick="setTheme('dark')" title="Dark Theme"><i class="fas fa-moon"></i></button>
+        <button onclick="setTheme('light')" title="Light Theme"><i class="fas fa-sun"></i></button>
+        <button onclick="setTheme('grey')" title="Grey Theme"><i class="fas fa-circle"></i></button>
+    </div>
+</header>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero faq-hero">
+    <div class="container">
+        <div class="hero-badge">
+            <span><i class="fas fa-question-circle"></i> Frequently Asked Questions</span>
+        </div>
+        <h1>Answers to Common Questions</h1>
+        <p class="hero-subtitle">Find quick answers to the most common questions about TalentFirst. Can't find what you're looking for? Contact our support team.</p>
+        
+        <div class="faq-search">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="faqSearch" placeholder="Search questions or topics...">
+                <button class="search-btn">Search</button>
+            </div>
+            <p class="search-hint">Try searching for "assessments", "pricing", "verification", or "support"</p>
+        </div>
+        
+        <div class="quick-links">
+            <a href="#candidates" class="quick-link">
+                <i class="fas fa-user"></i>
+                <span>For Candidates</span>
+            </a>
+            <a href="#companies" class="quick-link">
+                <i class="fas fa-building"></i>
+                <span>For Companies</span>
+            </a>
+            <a href="#technical" class="quick-link">
+                <i class="fas fa-cogs"></i>
+                <span>Technical Questions</span>
+            </a>
+            <a href="#billing" class="quick-link">
+                <i class="fas fa-credit-card"></i>
+                <span>Billing & Accounts</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FAQ CATEGORIES ================= -->
+<section class="faq-categories">
+    <div class="container">
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="all">
+                <i class="fas fa-layer-group"></i>
+                <span>All Questions</span>
+            </button>
+            <button class="category-tab" data-category="candidates" id="candidates">
+                <i class="fas fa-user"></i>
+                <span>For Candidates</span>
+            </button>
+            <button class="category-tab" data-category="companies" id="companies">
+                <i class="fas fa-building"></i>
+                <span>For Companies</span>
+            </button>
+            <button class="category-tab" data-category="technical" id="technical">
+                <i class="fas fa-cogs"></i>
+                <span>Technical</span>
+            </button>
+            <button class="category-tab" data-category="billing" id="billing">
+                <i class="fas fa-credit-card"></i>
+                <span>Billing</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FAQ CONTENT ================= -->
+<section class="faq-content-section">
+    <div class="container">
+        <!-- For Candidates -->
+        <div class="faq-category-section active" id="candidates-faq">
+            <div class="category-header">
+                <h2><i class="fas fa-user"></i> For Candidates</h2>
+                <p>Questions about joining, assessments, and finding opportunities</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item" data-search="free cost pricing">
+                    <button class="faq-question">
+                        <span>Is TalentFirst free for candidates?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, TalentFirst is completely free for candidates. You can:</p>
+                        <ul>
+                            <li>Create a detailed profile showcasing your skills</li>
+                            <li>Take up to 5 skill assessments for free</li>
+                            <li>Apply to unlimited job opportunities</li>
+                            <li>Receive job matches and interview requests</li>
+                            <li>Access basic career insights and analytics</li>
+                        </ul>
+                        <p>We offer premium features like unlimited assessments, priority matching, and advanced analytics for $19/month, but the core platform remains free.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="skill verification assessment test">
+                    <button class="faq-question">
+                        <span>How do skill assessments work?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our skill assessments are designed to verify your real-world abilities:</p>
+                        <div class="assessment-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Choose Your Assessment</h4>
+                                    <p>Select from 50+ skill categories including programming, design, data analysis, marketing, and more.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Complete the Test</h4>
+                                    <p>Tests range from 30-90 minutes and include practical challenges, coding exercises, or portfolio reviews.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Get Verified</h4>
+                                    <p>Receive a verified skill badge and detailed feedback. Results are added to your profile automatically.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Assessments are graded by our AI system and reviewed by experts in your field.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="privacy data security">
+                    <button class="faq-question">
+                        <span>How is my data protected and who can see it?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Your privacy and security are our top priorities:</p>
+                        <div class="privacy-features">
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>Complete Control</h4>
+                                    <p>You control exactly which companies can see your profile and when. You can be anonymous until you're ready to apply.</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-lock"></i>
+                                <div>
+                                    <h4>Enterprise Security</h4>
+                                    <p>We use bank-level encryption, regular security audits, and comply with GDPR, CCPA, and other privacy regulations.</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-eye-slash"></i>
+                                <div>
+                                    <h4>Anonymous Applications</h4>
+                                    <p>Apply to jobs without revealing your identity until you choose to share it with the company.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>We never sell your data to third parties. Your information is only shared with companies you explicitly approve.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="time hiring process duration">
+                    <button class="faq-question">
+                        <span>How long does the hiring process take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The TalentFirst process is significantly faster than traditional hiring:</p>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="time">Day 1</div>
+                                <div class="content">
+                                    <h4>Profile & Assessments</h4>
+                                    <p>Complete your profile and skill assessments (1-2 hours)</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">Day 2-3</div>
+                                <div class="content">
+                                    <h4>Job Matches & Interviews</h4>
+                                    <p>Receive matches and schedule interviews (usually within 48 hours)</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="time">Day 3-5</div>
+                                <div class="content">
+                                    <h4>Offers & Decisions</h4>
+                                    <p>Receive offers and make your decision (fastest recorded: 14 hours)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="stat-highlight"><i class="fas fa-bolt"></i> <strong>Average time to hire:</strong> 2-5 days vs 4-8 weeks with traditional methods</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="fail assessment retake">
+                    <button class="faq-question">
+                        <span>What if I don't pass a skill assessment?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Not passing an assessment is completely normal and part of the learning process:</p>
+                        <ul>
+                            <li><strong>Detailed Feedback:</strong> You'll receive comprehensive feedback on areas for improvement</li>
+                            <li><strong>Retake Option:</strong> You can retake assessments after 30 days of preparation</li>
+                            <li><strong>Learning Resources:</strong> We provide free resources to help you improve</li>
+                            <li><strong>No Penalty:</strong> Failed assessments don't negatively impact your profile</li>
+                        </ul>
+                        <p>Our goal is to help you identify skill gaps and provide resources to improve, not to exclude candidates.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="international global countries">
+                    <button class="faq-question">
+                        <span>Can I use TalentFirst internationally?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! TalentFirst is a global platform:</p>
+                        <div class="global-features">
+                            <div class="global-stat">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <h4>50+ Countries</h4>
+                                    <p>Opportunities across North America, Europe, Asia, and more</p>
+                                </div>
+                            </div>
+                            <div class="global-stat">
+                                <i class="fas fa-language"></i>
+                                <div>
+                                    <h4>Multi-language</h4>
+                                    <p>Platform available in English, Spanish, French, German, and Japanese</p>
+                                </div>
+                            </div>
+                            <div class="global-stat">
+                                <i class="fas fa-money-bill-wave"></i>
+                                <div>
+                                    <h4>Global Compensation</h4>
+                                    <p>Salary data and compensation insights for different regions</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>We handle visa sponsorship, relocation packages, and international hiring logistics for many roles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- For Companies -->
+        <div class="faq-category-section" id="companies-faq">
+            <div class="category-header">
+                <h2><i class="fas fa-building"></i> For Companies</h2>
+                <p>Questions about hiring, pricing, and talent sourcing</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item" data-search="pricing cost subscription">
+                    <button class="faq-question">
+                        <span>How much does TalentFirst cost for companies?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer flexible pricing plans based on your hiring needs:</p>
+                        <div class="pricing-table">
+                            <div class="pricing-plan">
+                                <h4>Starter</h4>
+                                <div class="price">$99<span>/month</span></div>
+                                <ul>
+                                    <li>1 active job posting</li>
+                                    <li>Up to 50 candidate views</li>
+                                    <li>Basic search filters</li>
+                                    <li>Email support</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-plan featured">
+                                <div class="featured-badge">Most Popular</div>
+                                <h4>Business</h4>
+                                <div class="price">$299<span>/month</span></div>
+                                <ul>
+                                    <li>5 active job postings</li>
+                                    <li>Unlimited candidate views</li>
+                                    <li>Advanced search & AI matching</li>
+                                    <li>Priority support</li>
+                                    <li>Analytics dashboard</li>
+                                </ul>
+                            </div>
+                            <div class="pricing-plan">
+                                <h4>Enterprise</h4>
+                                <div class="price">Custom</div>
+                                <ul>
+                                    <li>Unlimited job postings</li>
+                                    <li>Custom assessments</li>
+                                    <li>Dedicated account manager</li>
+                                    <li>API access</li>
+                                    <li>Custom integrations</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p><strong>Success-based pricing:</strong> No placement fees. You only pay the monthly subscription.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="verified candidates quality">
+                    <button class="faq-question">
+                        <span>How are candidates verified and what's the quality like?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our verification process ensures you only see qualified candidates:</p>
+                        <div class="verification-process">
+                            <div class="verification-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Skill Assessments</h4>
+                                    <p>Candidates complete practical tests that simulate real work scenarios. Tests are graded by AI and reviewed by experts.</p>
+                                </div>
+                            </div>
+                            <div class="verification-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Portfolio Review</h4>
+                                    <p>For creative roles, portfolios are reviewed by industry professionals against job-specific criteria.</p>
+                                </div>
+                            </div>
+                            <div class="verification-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h4>Performance Analytics</h4>
+                                    <p>We track assessment performance, completion rates, and provide reliability scores for each candidate.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="stat-highlight"><i class="fas fa-star"></i> <strong>Quality metrics:</strong> 95% of hires through TalentFirst meet or exceed performance expectations in their first year.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="time save screening">
+                    <button class="faq-question">
+                        <span>How much time does TalentFirst save in the hiring process?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>TalentFirst significantly reduces hiring time across all stages:</p>
+                        <div class="time-savings">
+                            <div class="saving">
+                                <div class="saving-header">
+                                    <h4>Screening Time</h4>
+                                    <span class="saving-percent">↓ 90%</span>
+                                </div>
+                                <p>No more resume screening. Start with pre-verified candidates.</p>
+                            </div>
+                            <div class="saving">
+                                <div class="saving-header">
+                                    <h4>Time to Hire</h4>
+                                    <span class="saving-percent">↓ 85%</span>
+                                </div>
+                                <p>Average hiring time reduced from 42 days to 3-5 days.</p>
+                            </div>
+                            <div class="saving">
+                                <div class="saving-header">
+                                    <h4>Interview Hours</h4>
+                                    <span class="saving-percent">↓ 70%</span>
+                                </div>
+                                <p>Fewer interviews needed as candidates are already verified.</p>
+                            </div>
+                        </div>
+                        <div class="case-study">
+                            <h4><i class="fas fa-chart-bar"></i> Real Company Results</h4>
+                            <p><strong>TechCorp Inc.</strong> reduced their average engineering hire time from 68 days to 4 days, saving approximately $45,000 per hire in recruitment costs and lost productivity.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="integrations ATS HR">
+                    <button class="faq-question">
+                        <span>Does TalentFirst integrate with our existing ATS/HR systems?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer comprehensive integrations with most major systems:</p>
+                        <div class="integrations">
+                            <div class="integration-category">
+                                <h4>ATS Integrations</h4>
+                                <div class="integration-list">
+                                    <span><i class="fab fa-hubspot"></i> Greenhouse</span>
+                                    <span><i class="fas fa-leaf"></i> Lever</span>
+                                    <span><i class="fas fa-bullseye"></i> Workday</span>
+                                    <span><i class="fas fa-suitcase"></i> SmartRecruiters</span>
+                                    <span><i class="fas fa-database"></i> BambooHR</span>
+                                </div>
+                            </div>
+                            <div class="integration-category">
+                                <h4>HR Systems</h4>
+                                <div class="integration-list">
+                                    <span><i class="fas fa-users"></i> ADP</span>
+                                    <span><i class="fas fa-user-friends"></i> Gusto</span>
+                                    <span><i class="fas fa-chart-network"></i> Namely</span>
+                                    <span><i class="fas fa-cogs"></i> Zenefits</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p><strong>API Access:</strong> Our REST API allows custom integrations with any system. Enterprise plans include dedicated integration support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Technical Questions -->
+        <div class="faq-category-section" id="technical-faq">
+            <div class="category-header">
+                <h2><i class="fas fa-cogs"></i> Technical Questions</h2>
+                <p>Platform features, compatibility, and technical requirements</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item" data-search="browser compatibility requirements">
+                    <button class="faq-question">
+                        <span>What are the technical requirements to use TalentFirst?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>TalentFirst is designed to work seamlessly across devices and browsers:</p>
+                        <div class="requirements">
+                            <div class="requirement-category">
+                                <h4>Supported Browsers</h4>
+                                <ul>
+                                    <li><i class="fab fa-chrome"></i> Chrome 80+ (Recommended)</li>
+                                    <li><i class="fab fa-firefox"></i> Firefox 75+</li>
+                                    <li><i class="fab fa-safari"></i> Safari 13+</li>
+                                    <li><i class="fab fa-edge"></i> Edge 80+</li>
+                                </ul>
+                            </div>
+                            <div class="requirement-category">
+                                <h4>Device Support</h4>
+                                <ul>
+                                    <li><i class="fas fa-desktop"></i> Desktop/Laptop</li>
+                                    <li><i class="fas fa-tablet-alt"></i> Tablet (iOS & Android)</li>
+                                    <li><i class="fas fa-mobile-alt"></i> Mobile (iOS 13+, Android 8+)</li>
+                                </ul>
+                            </div>
+                            <div class="requirement-category">
+                                <h4>Assessment Requirements</h4>
+                                <ul>
+                                    <li><i class="fas fa-wifi"></i> Stable internet connection</li>
+                                    <li><i class="fas fa-microphone"></i> Microphone (for some interviews)</li>
+                                    <li><i class="fas fa-video"></i> Webcam (for video assessments)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p><strong>Note:</strong> Some coding assessments may require specific development environments. We provide cloud-based IDEs for all technical tests.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="mobile app download">
+                    <button class="faq-question">
+                        <span>Is there a mobile app available?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! TalentFirst offers native mobile apps for both iOS and Android:</p>
+                        <div class="mobile-apps">
+                            <div class="app-platform">
+                                <div class="app-icon">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+                                <div class="app-details">
+                                    <h4>iOS App</h4>
+                                    <p>Available on the App Store for iPhone and iPad</p>
+                                    <div class="app-features">
+                                        <span><i class="fas fa-check"></i> Push notifications</span>
+                                        <span><i class="fas fa-check"></i> Offline access</span>
+                                        <span><i class="fas fa-check"></i> Touch ID/Face ID</span>
+                                    </div>
+                                    <a href="#" class="download-btn">
+                                        <i class="fab fa-app-store"></i>
+                                        <span>Download on App Store</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="app-platform">
+                                <div class="app-icon">
+                                    <i class="fab fa-android"></i>
+                                </div>
+                                <div class="app-details">
+                                    <h4>Android App</h4>
+                                    <p>Available on Google Play Store</p>
+                                    <div class="app-features">
+                                        <span><i class="fas fa-check"></i> Instant updates</span>
+                                        <span><i class="fas fa-check"></i> Dark mode</span>
+                                        <span><i class="fas fa-check"></i> Widget support</span>
+                                    </div>
+                                    <a href="#" class="download-btn">
+                                        <i class="fab fa-google-play"></i>
+                                        <span>Get it on Google Play</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <p>The mobile app includes all core features: profile management, assessments, job applications, and interview scheduling.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="API developers documentation">
+                    <button class="faq-question">
+                        <span>Is there an API available for developers?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer a comprehensive REST API for developers and enterprises:</p>
+                        <div class="api-features">
+                            <div class="api-feature">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <h4>Full Platform Access</h4>
+                                    <p>Access candidates, jobs, assessments, and analytics programmatically</p>
+                                </div>
+                            </div>
+                            <div class="api-feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>OAuth 2.0 Authentication</h4>
+                                    <p>Secure API access with role-based permissions</p>
+                                </div>
+                            </div>
+                            <div class="api-feature">
+                                <i class="fas fa-book"></i>
+                                <div>
+                                    <h4>Comprehensive Documentation</h4>
+                                    <p>Detailed API docs with code samples in multiple languages</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="api-access">
+                            <h4><i class="fas fa-key"></i> Access Levels</h4>
+                            <div class="access-levels">
+                                <div class="level">
+                                    <h5>Free Tier</h5>
+                                    <p>100 requests/day • Read-only access • Basic endpoints</p>
+                                </div>
+                                <div class="level">
+                                    <h5>Business Tier</h5>
+                                    <p>10,000 requests/day • Write access • Advanced endpoints</p>
+                                </div>
+                                <div class="level">
+                                    <h5>Enterprise</h5>
+                                    <p>Unlimited requests • Full access • Custom endpoints</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p><a href="#" class="api-link"><i class="fas fa-external-link-alt"></i> View API Documentation</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Billing & Accounts -->
+        <div class="faq-category-section" id="billing-faq">
+            <div class="category-header">
+                <h2><i class="fas fa-credit-card"></i> Billing & Accounts</h2>
+                <p>Questions about payments, subscriptions, and account management</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item" data-search="cancel refund subscription">
+                    <button class="faq-question">
+                        <span>How do I cancel my subscription and is there a refund?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Cancelling your subscription is simple and can be done at any time:</p>
+                        <div class="cancellation-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Go to Account Settings</h4>
+                                    <p>Navigate to your account settings from the dashboard</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Select Billing</h4>
+                                    <p>Click on the "Billing & Subscription" tab</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Cancel Subscription</h4>
+                                    <p>Click "Cancel Subscription" and confirm your choice</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="refund-policy">
+                            <h4><i class="fas fa-money-bill-wave"></i> Refund Policy</h4>
+                            <ul>
+                                <li><strong>14-day money-back guarantee:</strong> Full refund if cancelled within 14 days of purchase</li>
+                                <li><strong>Pro-rated refunds:</strong> For annual plans, refunds are pro-rated for unused months</li>
+                                <li><strong>No questions asked:</strong> We process refunds quickly with minimal verification</li>
+                            </ul>
+                        </div>
+                        <p><strong>Note:</strong> After cancellation, you'll retain access to premium features until the end of your billing period.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="payment methods security">
+                    <button class="faq-question">
+                        <span>What payment methods do you accept and how secure are they?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major payment methods with enterprise-grade security:</p>
+                        <div class="payment-methods">
+                            <div class="payment-category">
+                                <h4>Credit & Debit Cards</h4>
+                                <div class="card-icons">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fab fa-cc-amex"></i>
+                                    <i class="fab fa-cc-discover"></i>
+                                </div>
+                                <p>Processed securely via Stripe with PCI DSS Level 1 compliance</p>
+                            </div>
+                            <div class="payment-category">
+                                <h4>Digital Wallets</h4>
+                                <div class="wallet-icons">
+                                    <i class="fab fa-google-pay"></i>
+                                    <i class="fab fa-apple-pay"></i>
+                                    <i class="fab fa-paypal"></i>
+                                </div>
+                                <p>Fast, secure payments without sharing card details</p>
+                            </div>
+                            <div class="payment-category">
+                                <h4>Bank Transfers & Invoicing</h4>
+                                <div class="bank-icons">
+                                    <i class="fas fa-university"></i>
+                                    <i class="fas fa-file-invoice-dollar"></i>
+                                </div>
+                                <p>Available for enterprise customers with net-30 terms</p>
+                            </div>
+                        </div>
+                        <div class="security-features">
+                            <h4><i class="fas fa-shield-alt"></i> Security Features</h4>
+                            <ul>
+                                <li>End-to-end encryption for all transactions</li>
+                                <li>Regular security audits and penetration testing</li>
+                                <li>SOC 2 Type II certified</li>
+                                <li>Never store raw payment data on our servers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-search="delete account data">
+                    <button class="faq-question">
+                        <span>How do I delete my account and what happens to my data?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You have full control over your data and account deletion:</p>
+                        <div class="deletion-process">
+                            <div class="process-step">
+                                <h4><i class="fas fa-trash-alt"></i> Account Deletion Process</h4>
+                                <ol>
+                                    <li>Go to Account Settings → Privacy & Data</li>
+                                    <li>Click "Request Account Deletion"</li>
+                                    <li>Confirm via email for security verification</li>
+                                    <li>Receive confirmation of deletion</li>
+                                </ol>
+                            </div>
+                            <div class="data-handling">
+                                <h4><i class="fas fa-database"></i> Data Handling After Deletion</h4>
+                                <table class="data-table">
+                                    <tr>
+                                        <th>Data Type</th>
+                                        <th>Retention Period</th>
+                                        <th>Notes</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Personal Information</td>
+                                        <td>30 days</td>
+                                        <td>Permanently deleted from all systems</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Assessment Results</td>
+                                        <td>90 days</td>
+                                        <td>Anonymized for platform improvement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Application History</td>
+                                        <td>30 days</td>
+                                        <td>Companies you applied to retain records per their policies</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <p class="warning-note"><i class="fas fa-exclamation-triangle"></i> <strong>Warning:</strong> Account deletion is permanent and cannot be undone. Download any data you want to keep before proceeding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Still Have Questions -->
+        <div class="still-questions">
+            <div class="questions-content">
+                <div class="questions-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>Still Have Questions?</h3>
+                <p>Can't find the answer you're looking for? Our support team is here to help.</p>
+                <div class="contact-options">
+                    <a href="contact.html" class="btn primary">
+                        <i class="fas fa-envelope"></i> Contact Support
+                    </a>
+                    <a href="#" class="btn outline">
+                        <i class="fas fa-comments"></i> Live Chat
+                    </a>
+                    <a href="#" class="btn outline">
+                        <i class="fas fa-file-alt"></i> Help Center
+                    </a>
+                </div>
+                <div class="support-info">
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Response Time</h4>
+                            <p>Typically within 2 hours</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-headset"></i>
+                        <div>
+                            <h4>Support Hours</h4>
+                            <p>24/7 for urgent issues</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <h4>Satisfaction Rate</h4>
+                            <p>98% customer satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-section">
+                <div class="logo">
+                    <a href="index.html">Talent<span>First</span></a>
+                </div>
+                <p class="footer-tagline">Skills get hired. Resumes get ignored.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>For Candidates</h4>
+                <ul>
+                    <li><a href="#">Find Jobs</a></li>
+                    <li><a href="#">Skill Assessments</a></li>
+                    <li><a href="#">Career Resources</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="testimonials.html">Success Stories</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>For Companies</h4>
+                <ul>
+                    <li><a href="for-companies.html">Post a Job</a></li>
+                    <li><a href="for-companies.html">Browse Talent</a></li>
+                    <li><a href="for-companies.html">Hiring Solutions</a></li>
+                    <li><a href="for-companies.html">Enterprise</a></li>
+                    <li><a href="testimonials.html">Case Studies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to our newsletter for the latest job trends</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 TalentFirst. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    // FAQ Functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        const categoryTabs = document.querySelectorAll('.category-tab');
+        const faqSections = document.querySelectorAll('.faq-category-section');
+        const searchInput = document.getElementById('faqSearch');
+        
+        // Initialize all FAQs as collapsed
+        faqQuestions.forEach(question => {
+            const answer = question.nextElementSibling;
+            answer.style.maxHeight = '0px';
+            answer.style.opacity = '0';
+        });
+        
+        // FAQ Accordion Toggle
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                // Close all other answers
+                faqQuestions.forEach(otherQuestion => {
+                    if (otherQuestion !== this) {
+                        const otherAnswer = otherQuestion.nextElementSibling;
+                        const otherIcon = otherQuestion.querySelector('i');
+                        otherAnswer.style.maxHeight = '0px';
+                        otherAnswer.style.opacity = '0';
+                        otherIcon.classList.remove('fa-chevron-up');
+                        otherIcon.classList.add('fa-chevron-down');
+                    }
+                });
+                
+                // Toggle current answer
+                if (answer.style.maxHeight === '0px' || answer.style.maxHeight === '') {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    answer.style.opacity = '1';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    answer.style.maxHeight = '0px';
+                    answer.style.opacity = '0';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+        
+        // Category Tabs
+        categoryTabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
+                
+                // Update active tab
+                categoryTabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Show corresponding FAQ section
+                faqSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                
+                if (category === 'all') {
+                    faqSections.forEach(section => {
+                        section.classList.add('active');
+                    });
+                } else {
+                    document.getElementById(`${category}-faq`).classList.add('active');
+                }
+                
+                // Smooth scroll to section
+                const sectionTop = document.querySelector('.faq-content-section').offsetTop - 100;
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Quick Links
+        const quickLinks = document.querySelectorAll('.quick-link');
+        quickLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetTab = document.querySelector(`[data-category="${targetId}"]`);
+                
+                if (targetTab) {
+                    targetTab.click();
+                }
+            });
+        });
+        
+        // FAQ Search
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase().trim();
+                
+                if (searchTerm.length < 2) {
+                    // Reset all FAQs
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        item.style.display = 'block';
+                    });
+                    return;
+                }
+                
+                // Search through FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    const question = item.querySelector('.faq-question span').textContent.toLowerCase();
+                    const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                    const searchData = item.getAttribute('data-search') || '';
+                    
+                    if (question.includes(searchTerm) || 
+                        answer.includes(searchTerm) || 
+                        searchData.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        
+                        // Highlight search term
+                        highlightText(item, searchTerm);
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        }
+        
+        // Search button
+        const searchBtn = document.querySelector('.search-btn');
+        if (searchBtn) {
+            searchBtn.addEventListener('click', function() {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                if (searchTerm) {
+                    searchInput.dispatchEvent(new Event('input'));
+                }
+            });
+        }
+        
+        // Enter key in search
+        if (searchInput) {
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchBtn.click();
+                }
+            });
+        }
+        
+        // Highlight text function
+        function highlightText(element, searchTerm) {
+            const textNodes = getTextNodes(element);
+            
+            textNodes.forEach(node => {
+                const text = node.textContent;
+                const regex = new RegExp(`(${searchTerm})`, 'gi');
+                const newText = text.replace(regex, '<mark>$1</mark>');
+                
+                if (newText !== text) {
+                    const span = document.createElement('span');
+                    span.innerHTML = newText;
+                    node.parentNode.replaceChild(span, node);
+                }
+            });
+        }
+        
+        function getTextNodes(element) {
+            const walker = document.createTreeWalker(
+                element,
+                NodeFilter.SHOW_TEXT,
+                null,
+                false
+            );
+            
+            const textNodes = [];
+            let node;
+            while (node = walker.nextNode()) {
+                textNodes.push(node);
+            }
+            
+            return textNodes;
+        }
+        
+        // Auto-expand first FAQ in each category
+        setTimeout(() => {
+            faqSections.forEach(section => {
+                const firstQuestion = section.querySelector('.faq-question');
+                if (firstQuestion) {
+                    firstQuestion.click();
+                }
+            });
+        }, 500);
+    });
+</script>
+</body>
+</html>

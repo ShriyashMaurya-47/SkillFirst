@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - TalentFirst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact TalentFirst for questions, support, or partnership inquiries.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <a href="index.html">Talent<span>First</span></a>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="why-talentfirst.html">Why TalentFirst</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="faq.html">FAQ</a>
+        <a href="for-companies.html">For Companies</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="theme-switch">
+        <button onclick="setTheme('dark')" title="Dark Theme"><i class="fas fa-moon"></i></button>
+        <button onclick="setTheme('light')" title="Light Theme"><i class="fas fa-sun"></i></button>
+        <button onclick="setTheme('grey')" title="Grey Theme"><i class="fas fa-circle"></i></button>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Have questions? Reach out to our team. We're here to help you succeed.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>We'd love to hear from you. Whether you have questions about our platform, need support, or want to explore partnership opportunities, our team is ready to help.</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>support@talentfirst.com</p>
+                            <p>sales@talentfirst.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <p>Mon-Fri, 9am-6pm EST</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Office</h4>
+                            <p>123 Innovation Drive</p>
+                            <p>San Francisco, CA 94107</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Support Hours</h4>
+                            <p>24/7 Chat Support</p>
+                            <p>Email: Response within 24h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-contact">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <h2>Send us a Message</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" placeholder="your.email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="support">Technical Support</option>
+                            <option value="sales">Sales Inquiry</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" placeholder="How can we help you?" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section alt">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-preview">
+            <div class="faq-preview-item">
+                <h4>How quickly will I get a response?</h4>
+                <p>We typically respond within 24 hours for email inquiries and immediately for live chat support.</p>
+            </div>
+            <div class="faq-preview-item">
+                <h4>Do you offer phone support?</h4>
+                <p>Yes, phone support is available for enterprise customers and during business hours for all users.</p>
+            </div>
+            <div class="faq-preview-item">
+                <h4>Can I schedule a demo?</h4>
+                <p>Absolutely! Use the contact form to request a personalized demo of our platform.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="faq.html" class="btn outline">View All FAQs</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer (same as index.html) -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="logo">
+                <a href="index.html">Talent<span>First</span></a>
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="why-talentfirst.html">Why TalentFirst</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="faq.html">FAQ</a>
+                <a href="for-companies.html">For Companies</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <div class="social">
+                <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="contact.html">Support</a>
+        </div>
+        <p>&copy; 2023 TalentFirst. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
